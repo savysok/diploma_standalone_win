@@ -122,7 +122,7 @@ def move_block_to_preview():
         i = 0
         while i < len(preview_block):
             preview_block[i].worldPosition.x = object_list[i][1] + preview.worldPosition.x
-            preview_block[i].worldPosition.y = object_list[i][2] + preview.worldPosition.y + 8
+            preview_block[i].worldPosition.y = object_list[i][2] + preview.worldPosition.y
             preview_block[i].worldPosition.z = object_list[i][3] + preview.worldPosition.z
             
             xyz = preview_block[i].worldOrientation.to_euler()
@@ -195,7 +195,7 @@ block_in_list = 0
        
 def change_block(file):
     
-    print(main_scene.objects["preview.parts_space"]["mode"])
+    #print(main_scene.objects["preview.parts_space"]["mode"])
     
     controller = bge.logic.getCurrentController()
     own = controller.owner
